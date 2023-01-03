@@ -39,9 +39,13 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 /*===========ОБЩИЕ СТИЛИ======================*/
+:root {
+    --basic-color: #131313;
+    --title-color: #6f6f6f;
+}
 body{
     font-family: 'Inter';
-    color: #131313;
+    color: var(--basic-color);
     font-size: 14px;
     background-color: #e5e5e5;
 }
@@ -68,14 +72,14 @@ main{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 14px;
-    color: #131313;
+    color: var(--basic-color);
     text-transform: uppercase;
     padding: 0px 25px;
     transition: all 1s;
 }
 .menu__link:hover{
     color: #ffff;
-    background-color: #131313;
+    background-color: var(--basic-color);
     padding: 42px 25px 42px 25px;
 }
 /*=======================XIAOMI========================*/
@@ -95,7 +99,7 @@ main{
 .xiaomi__subtitle {
     font-size: 32px;
     line-height: 121.8%;
-    color: #6f6f6f;
+    color: var(--title-color);
     padding-bottom: 60px;
 }
 .xiaomi__text{
@@ -121,7 +125,7 @@ main{
     display: flex;
 }
 .button {
-    background-color: #131313;
+    background-color: var(--basic-color);
     color: #ffff;
     font-family: Inter;
     font-size: 20px;
@@ -212,7 +216,7 @@ caption {
     font-weight: 700;
     line-height: 106.25%;
     color: #ffff;
-    background-color: #131313;
+    background-color: var(--basic-color);
     padding: 3px 0px 3px 1px;
     text-align: start;
 }
@@ -276,11 +280,10 @@ td {
     border: none;
     border-bottom: 1px solid black;
     background-color: inherit;
-    color: #6f6f6f;
     opacity: 0.5;
 }
 .input__text {
-    color: #6f6f6f;
+    color: var(--title-color);
     opacity: 0.5;
     margin-bottom: 10px;
     padding: 0;
@@ -315,10 +318,10 @@ td {
 }
 .sale__form-radio-style-white {
     background-color: #ffff;
-    border: #6f6f6f 1px solid ;
+    border: var(--title-color) 1px solid ;
 }
 .sale__form-radio-style-grey {
-    background-color: #6f6f6f;
+    background-color: var(--title-color);
 }
 .sale__form-radio-style-red {
     background-color: #ff4040;
@@ -357,7 +360,7 @@ td {
 /*=======================FOOTER========================*/
 .footer__container {
     display: flex;
-    background-color: #131313;
+    background-color: var(--basic-color);
     margin-top: 50px;
     min-height: 100px;
     align-items: center;
