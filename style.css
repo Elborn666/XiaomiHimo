@@ -42,6 +42,8 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 :root {
     --basic-color: #131313;
     --title-color: #6f6f6f;
+    --red-color: #ff4040;
+    --white-color: #fff;
 }
 body{
     font-family: 'Inter';
@@ -58,7 +60,7 @@ main{
     padding: 0px 15px;
 }
 /*=======================MENU========================*/
-.menu__container {
+.menu__body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 96px;
@@ -78,12 +80,12 @@ main{
     transition: all 1s;
 }
 .menu__link:hover{
-    color: #ffff;
+    color: var(--white-color);
     background-color: var(--basic-color);
     padding: 42px 25px 42px 25px;
 }
 /*=======================XIAOMI========================*/
-.xiaomi__container {
+.xiaomi__body {
     display: flex;
     justify-content: space-between;
 }
@@ -126,7 +128,7 @@ main{
 }
 .button {
     background-color: var(--basic-color);
-    color: #ffff;
+    color: var(--white-color);
     font-family: Inter;
     font-size: 20px;
     line-height: 120%;
@@ -137,7 +139,7 @@ main{
     margin-top: 20px;
 }
 .button:hover{
-    background-color: #ff4040;
+    background-color: var(--red-color);
 }
 .himo__list {
     display: flex;
@@ -165,7 +167,7 @@ main{
     text-align: center;
 }
 /*=======================INFO========================*/
-.info__container {
+.info__body {
     display: flex;
     padding-top: 150px;
 }
@@ -192,7 +194,7 @@ main{
     padding-bottom: 50px;
 }
 /*=======================CHARACTERISTICS========================*/
-.characteristics__container {
+.characteristics__body {
     display: flex;
     padding-top: 150px;
 }
@@ -215,7 +217,7 @@ caption {
     text-transform: uppercase;
     font-weight: 700;
     line-height: 106.25%;
-    color: #ffff;
+    color: var(--white-color);
     background-color: var(--basic-color);
     padding: 3px 0px 3px 1px;
     text-align: start;
@@ -245,13 +247,15 @@ td {
 .picture__container {
     padding-top: 150px;
 }
-._slider img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.swiper-button-prev {
+    font-size: 50px;
+}
+.swiper {
+    width: 1150px;
+    height: 630px;
 }
 /*=======================SALE========================*/
-.sale__container {
+.sale__body {
     display: flex;
     padding-top: 50px;
     position: relative;
@@ -317,14 +321,14 @@ td {
     margin-right: 23px;
 }
 .sale__form-radio-style-white {
-    background-color: #ffff;
+    background-color: var(--white-color);
     border: var(--title-color) 1px solid ;
 }
 .sale__form-radio-style-grey {
     background-color: var(--title-color);
 }
 .sale__form-radio-style-red {
-    background-color: #ff4040;
+    background-color: var(--red-color);
 }
 .sale__form-bike-prise {
     font-size: 32px;
@@ -337,7 +341,7 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ff4040;
+    border: 1px solid var(--red-color);
     border-radius: 50%;
     padding: 0;
 }
@@ -348,7 +352,7 @@ td {
     left: 0;
     width: 220px;
     height: 100px;
-    border: 1px solid #ff4040;
+    border: 1px solid var(--red-color);
     border-radius: 50%;
 }
 .img__bike {
@@ -358,7 +362,7 @@ td {
     object-fit: cover;
 }
 /*=======================FOOTER========================*/
-.footer__container {
+.footer__body {
     display: flex;
     background-color: var(--basic-color);
     margin-top: 50px;
@@ -367,7 +371,7 @@ td {
     justify-content: space-around;
 }
 .footer__text {
-    color: #ffff;
+    color: var(--white-color);
     font-size: 12px;
     line-height: 125%;
     padding: 10px 0px;
@@ -398,7 +402,7 @@ td {
     padding: 10px 0px 10px 40px;
 }
 .information {
-    color: #ffff;
+    color: var(--white-color);
     font-size: 12px;
     line-height: 125%;
 }
