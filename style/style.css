@@ -114,17 +114,17 @@ main{
 .xiaomi__text-big {
     line-height: 121.4%;
 }
-.xiaomi__img{
-    flex: 0 1 50%;
-}
-._ibg img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.xiaomi__slider {
+    width: 630px;
+    height: 525px;
 }
 /*=======================HIMO========================*/
 .himo__container {
     display: flex;
+}
+.himo__body {
+    display: flex;
+    align-items: center;
 }
 .button {
     background-color: var(--basic-color);
@@ -143,17 +143,14 @@ main{
 }
 .himo__list {
     display: flex;
-    flex: 1 1 100%;
-    justify-content: flex-end;
+    margin-left: 215px;
+    margin-top: 25px;
+    column-gap: 50px;
 }
 .himo__item {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 25px 33px 0px 33px;
-}
-.himo__item:first-child{
-    padding: 25px 33px 0px 0px;
 }
 .himo__number {
     font-weight: 700;
@@ -249,7 +246,7 @@ td {
 }
 .slick-dots {
     position: absolute;
-    right: 0;
+    right: -15px;
     top: 0;
 }
 .slick-dots li + li {

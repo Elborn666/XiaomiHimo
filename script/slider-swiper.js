@@ -1,5 +1,5 @@
 $(function(){
-  $('.picture__slider').slick({
+  $('.picture__slider, .xiaomi__slider').slick({
     arrows: false,
     dots: true,
   });
