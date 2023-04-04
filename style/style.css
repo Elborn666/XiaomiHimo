@@ -247,12 +247,24 @@ td {
 .picture__container {
     padding-top: 150px;
 }
-.swiper-button-prev {
-    font-size: 50px;
+.slick-dots {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-.swiper {
-    width: 1150px;
-    height: 630px;
+.slick-dots li + li {
+    padding-top: 10px;
+}
+.slick-dots button {
+    font-size: 0px;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    background-color: var(--basic-color);
+    cursor: pointer;
+}
+.slick-active button {
+    background-color: var(--red-color);
 }
 /*=======================SALE========================*/
 .sale__body {

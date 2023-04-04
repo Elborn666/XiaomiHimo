@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/slick.css">
     <title>Xiaomi Himo</title>
 </head>
 
@@ -266,20 +266,12 @@
         </section>
         <div class="picture">
             <div class="picture__container container">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img src="./img/slider/slider.jpg" alt="bike"></div>
-                        <div class="swiper-slide"><img src="./img/slider/threebike.png" alt="bike"></div>
-                        <div class="swiper-slide"><img src="./img/slider/bikewithgirl.png" alt="bike"></div>
+                <div class="picture__slider">
+                    <div class="picture__slider-item"><img src="./img/slider/slider.jpg" width="1150" alt="bike"></div>
+                    <div class="picture__slider-item"><img src="./img/slider/threebike.png" width="1150" alt="bike">
                     </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <div class="picture__slider-item"><img src="./img/slider/bikewithgirl.png" width="1150" alt="bike">
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,8 +347,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./slider-swiper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script/slick.min.js"></script>
+    <script src="./script/slider-swiper.js"></script>
 </body>
 
 </html>
